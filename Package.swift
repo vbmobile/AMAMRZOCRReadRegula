@@ -2,14 +2,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "AMADocScanMrzRegula",
+    name: "AMAMRZOCRReadRegula",
     platforms: [
         .iOS(.v15)
     ],
     products: [
         .library(
-            name: "AMADocScanMrzRegula",
-            targets: ["AMADocScanMrzRegulaWrapper"]
+            name: "AMAMRZOCRReadRegula",
+            targets: ["AMAMRZOCRReadRegulaWrapper"]
         )
     ],
     dependencies: [
@@ -18,19 +18,19 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "AMADocScanMrzRegula",
-            url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMADocScanMrzRegula/AMADocScanMrzRegula-1.0.0.zip",
-            checksum: "PLACEHOLDER_CHECKSUM"
+            name: "AMAMRZOCRReadRegula",
+            url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMAMRZOCRReadRegula/AMAMRZOCRReadRegula-1.0.0.zip",
+            checksum: "354bf65f22e97697ad53c889bd901ec5050b183154acb69c23029b38fd000abb"
         ),
         .target(
-            name: "AMADocScanMrzRegulaWrapper",
+            name: "AMAMRZOCRReadRegulaWrapper",
             dependencies: [
-                .target(name: "AMADocScanMrzRegula"),
+                .target(name: "AMAMRZOCRReadRegula"),
                 .product(name: "AMADocModeliOS", package: "AMADocModeliOS"),
                 .product(name: "DocumentReader", package: "DocumentReader-Swift-Package"),
             ],
             path: "Sources",
-            sources: ["AMADocScanMrzRegula.swift"]
+            sources: ["AMAMRZOCRReadRegula.swift"]
         )
     ]
 )
