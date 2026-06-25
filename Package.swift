@@ -15,7 +15,7 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/vbmobile/AMADocModeliOS", .upToNextMinor(from: "2.0.0")),
         .package(url: "https://github.com/regulaforensics/DocumentReader-Swift-Package", from: "8.3.0"),
-        .package(url: "https://github.com/regulaforensics/DocumentReaderFull-Swift-Package", from: "8.3.0"),
+        .package(url: "https://github.com/regulaforensics/DocumentReaderMRZRFID-Swift-Package", from: "8.3.0"),
     ],
     targets: [
         .binaryTarget(
@@ -29,7 +29,7 @@ let package = Package(
                 .target(name: "AMAMRZOCRReadRegula"),
                 .product(name: "AMADocModeliOS", package: "AMADocModeliOS"),
                 .product(name: "DocumentReader", package: "DocumentReader-Swift-Package"),
-                .product(name: "Full", package: "DocumentReaderFull-Swift-Package"),
+                .product(name: "MRZRFID", package: "DocumentReaderMRZRFID-Swift-Package"),
             ],
             path: "Sources",
             sources: ["AMAMRZOCRReadRegula.swift"]
