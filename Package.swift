@@ -20,7 +20,7 @@ let package = Package(
         .binaryTarget(
             name: "AMAMRZOCRReadRegula",
             url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMAMRZOCRReadRegula/AMAMRZOCRReadRegula-1.0.0.zip",
-            checksum: "354bf65f22e97697ad53c889bd901ec5050b183154acb69c23029b38fd000abb"
+            checksum: "98fa87ef9014ed188e0a04ad5a4947ced770fa84bc4a1dbc650d4b5a5c9c069f"
         ),
         .target(
             name: "AMAMRZOCRReadRegulaWrapper",
