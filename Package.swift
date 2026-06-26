@@ -14,6 +14,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/vbmobile/AMADocModeliOS", .upToNextMinor(from: "2.0.0")),
+        .package(url: "https://github.com/vbmobile/VBNetworkClient", exact: "5.1.1"),
         .package(url: "https://github.com/regulaforensics/DocumentReader-Swift-Package", from: "8.3.0"),
         .package(url: "https://github.com/regulaforensics/DocumentReaderMRZRFID-Swift-Package", from: "8.3.0"),
     ],
@@ -28,6 +29,7 @@ let package = Package(
             dependencies: [
                 .target(name: "AMAMRZOCRReadRegula"),
                 .product(name: "AMADocModeliOS", package: "AMADocModeliOS"),
+                .product(name: "VBNetworkClient", package: "VBNetworkClient"),
                 .product(name: "DocumentReader", package: "DocumentReader-Swift-Package"),
                 .product(name: "MRZRFID", package: "DocumentReaderMRZRFID-Swift-Package"),
             ],
