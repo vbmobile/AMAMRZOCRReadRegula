@@ -9,7 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "AMAMRZOCRReadRegula",
-            targets: ["AMAMRZOCRReadRegulaWrapper"]
+            targets: ["AMAMRZOCRReadRegula", "AMAMRZOCRReadRegulaWrapper"]
         )
     ],
     dependencies: [
