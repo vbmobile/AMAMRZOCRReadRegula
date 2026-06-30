@@ -9,7 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "AMAMRZOCRReadRegula",
-            targets: ["AMAMRZOCRReadRegula", "AMAMRZOCRReadRegulaWrapper"]
+            targets: ["AMAMRZOCRReadRegula"]
         )
     ],
     dependencies: [
@@ -23,18 +23,6 @@ let package = Package(
             name: "AMAMRZOCRReadRegula",
             url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMAMRZOCRReadRegula/AMAMRZOCRReadRegula-1.0.0-rc01.zip",
             checksum: "5bf58f2366b0b4ce29249007a89262854e66134dac3f07691096c3e51f0dc2b1"
-        ),
-        .target(
-            name: "AMAMRZOCRReadRegulaWrapper",
-            dependencies: [
-                .target(name: "AMAMRZOCRReadRegula"),
-                .product(name: "AMADocModeliOS", package: "AMADocModeliOS"),
-                .product(name: "VBNetworkClient", package: "VBNetworkClient"),
-                .product(name: "DocumentReader", package: "DocumentReader-Swift-Package"),
-                .product(name: "MRZRFID", package: "DocumentReaderMRZRFID-Swift-Package"),
-            ],
-            path: "Sources",
-            sources: ["AMAMRZOCRReadRegula.swift"]
         )
     ]
 )
