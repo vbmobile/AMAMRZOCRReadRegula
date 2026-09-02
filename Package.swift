@@ -13,8 +13,8 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/vbmobile/AMADocModel", .upToNextMinor(from: "3.0.1")),
-        .package(url: "https://github.com/vbmobile/AMANetworkClient", exact: "6.0.1"),
+        .package(url: "https://github.com/vbmobile/AMADocModel", .upToNextMinor(from: "3.1.0")),
+        .package(url: "https://github.com/vbmobile/AMANetworkClient", .upToNextMinor(from: "6.0.1")),
         .package(url: "https://github.com/vbmobile/AMAUtils", .upToNextMinor(from: "3.0.4")),
         .package(url: "https://github.com/regulaforensics/DocumentReader-Swift-Package", from: "9.5.6487"),
         .package(url: "https://github.com/regulaforensics/DocumentReaderOCRRFID-Swift-Package", from: "9.5.18270"),
@@ -22,8 +22,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "AMAMRZOCRReadRegula",
-            url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMAMRZOCRReadRegula/AMAMRZOCRReadRegula-1.0.2.zip",
-            checksum: "5e8c029c33a797320d520b0eebf338328c4b33cd4c4cea9c786c7bc2406100f9"
+            url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMAMRZOCRReadRegula/AMAMRZOCRReadRegula-1.1.0.zip",
+            checksum: "0e1befb5fcf1aa540b3cb19b58eef27bfd63cdc4188cc372690d4130f36ad275"
         ),
         .target(
             name: "AMAMRZOCRReadRegulaWrapper",
